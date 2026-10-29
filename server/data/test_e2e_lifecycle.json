@@ -1,0 +1,374 @@
+{
+  "users": [
+    {
+      "id": "6c990d47-3759-44a5-8756-4bd31a07d904",
+      "email": "audited_student_1793107026959@securevault.local",
+      "password_hash": "$2a$12$LgB0pYQ84qat3jSmSag68e.KukgEvcrTC6u2elgf26iDVmuolMB2u",
+      "auth_salt": "b4f2d11635b6d3b5fc2d3403732f400d",
+      "vault_salt": "0aaa022d111e879ccf80ffff2472d2e4",
+      "recovery_encrypted_vault_key": "enc_recovery_mock",
+      "recovery_key_iv": "iv_recovery_mock",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-27T13:17:08.467Z",
+      "updated_at": "2026-10-27T13:17:08.467Z"
+    },
+    {
+      "id": "e7bba919-7c65-4a19-ba82-317aafafc490",
+      "email": "audited_student_1793173687230@securevault.local",
+      "password_hash": "$2a$12$Q2UfIc9DS5ss8YHCZgFnZekVTuLoTohlWL1vfN0xdCWXeoU7hMXi.",
+      "auth_salt": "3e658e275c712b83a25f395a0e20d64f",
+      "vault_salt": "d5e5de76f45da327a453e666f413e920",
+      "recovery_encrypted_vault_key": "enc_recovery_mock",
+      "recovery_key_iv": "iv_recovery_mock",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T07:48:08.436Z",
+      "updated_at": "2026-10-28T07:48:08.436Z"
+    },
+    {
+      "id": "8892a135-c029-4a6f-bdb9-cfdf7c34d4ff",
+      "email": "audited_student_1793175242840@securevault.local",
+      "password_hash": "$2a$12$Ze6kXtvkUJOtxfImjWnFeeAxyjB.h8cLI8H9gY1Uvy4XX0I1/9wRW",
+      "auth_salt": "705cd53a2a2fffee6b8751ae1248a377",
+      "vault_salt": "39ae12775794f13ffc4a4c2c414bd7ec",
+      "recovery_encrypted_vault_key": "enc_recovery_mock",
+      "recovery_key_iv": "iv_recovery_mock",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:14:03.702Z",
+      "updated_at": "2026-10-28T08:14:03.702Z"
+    },
+    {
+      "id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "email": "audited_student_1793175336205@securevault.local",
+      "password_hash": "$2a$12$fwVAxsc3nnwTk3dH3OGYIuz9XSzjfLwsUy/PfNrF7OquUdLNlUUbK",
+      "auth_salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+      "vault_salt": "09f8e7d6c5b4a3219876543210fedcba",
+      "recovery_encrypted_vault_key": "ebqpCU6iOX3GT8tmg4P2GHhkPNAsepirmOGXB/UXfaCJmeegNR2jr+u8OYMhd8Dd",
+      "recovery_key_iv": "X8/v7MISCBO7NupI",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:15:37.004Z",
+      "updated_at": "2026-10-28T08:15:37.673Z"
+    },
+    {
+      "id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "email": "audited_student_1793175425668@securevault.local",
+      "password_hash": "$2a$12$5gTb4qV2Z6uzSdVniq/qLe4uNgEa4wZZzQr6A2hvU/uNRUiIFfYxS",
+      "auth_salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+      "vault_salt": "09f8e7d6c5b4a3219876543210fedcba",
+      "recovery_encrypted_vault_key": "NomJn116tcTnIeYRIueV+ZG6T5l94cV+u7i5QoVxHJxbChP0f0+2yJJExikFjjgT",
+      "recovery_key_iv": "nRFZtR3M04VDBpeo",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:17:06.592Z",
+      "updated_at": "2026-10-28T08:17:07.215Z"
+    },
+    {
+      "id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "email": "audited_student_1793176312052@securevault.local",
+      "password_hash": "$2a$12$DhlEnSN0HcEc0ppZ5s5LTOHPiyFuEzRvJWxvktbQB95W2Aug61gfC",
+      "auth_salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+      "vault_salt": "09f8e7d6c5b4a3219876543210fedcba",
+      "recovery_encrypted_vault_key": "CBV+oQkFkSdzdyXS00dS7aYCKDWPJMRxAaW9bGeVXeMhvpo9+CGOBiMMGEqyPgas",
+      "recovery_key_iv": "H9V04zB+wyNTZboJ",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:31:52.999Z",
+      "updated_at": "2026-10-28T08:31:53.699Z"
+    },
+    {
+      "id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "email": "audited_student_1793176475104@securevault.local",
+      "password_hash": "$2a$12$dUNGEzQVmEc3WOPEpfryue1j0hZN5HCiUHxF8wb7cLxi2oWtTb3IG",
+      "auth_salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+      "vault_salt": "09f8e7d6c5b4a3219876543210fedcba",
+      "recovery_encrypted_vault_key": "EOCOKOpFpqoAkhl1WBo0NYUaokl+2M4n+Lzq+BLdX8GuGsdyWHIkjqqz/8320Vnv",
+      "recovery_key_iv": "pv8/okZmOUJrpU6u",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:34:35.930Z",
+      "updated_at": "2026-10-28T08:34:36.551Z"
+    }
+  ],
+  "vault_items": [],
+  "sessions": [
+    {
+      "id": "ac9cbfe7f639e71edad8cebc94b394f43dcd247ffab7e59553bf74af73560baf",
+      "user_id": "6c990d47-3759-44a5-8756-4bd31a07d904",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T13:17:08.469Z",
+      "created_at": "2026-10-27T13:17:08.467Z"
+    },
+    {
+      "id": "100005b4852bab0be22532dd053ed665baf1c52c207593fb6cd57d12027eb78f",
+      "user_id": "e7bba919-7c65-4a19-ba82-317aafafc490",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T07:48:08.437Z",
+      "created_at": "2026-10-28T07:48:08.436Z"
+    },
+    {
+      "id": "c6234e1d36913bae26757b71a5fd1399c97c546f6b462205ac6daff5558e7205",
+      "user_id": "8892a135-c029-4a6f-bdb9-cfdf7c34d4ff",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:14:03.703Z",
+      "created_at": "2026-10-28T08:14:03.702Z"
+    },
+    {
+      "id": "de0d665b89eb76d88b214b64d6255c2c2c3b38b8c67af0516e596f055f5ca2bc",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:15:38.078Z",
+      "created_at": "2026-10-28T08:15:38.078Z"
+    },
+    {
+      "id": "20075e17fd7616b0c967b87142c50e753a511e9dd9fbd691f6bc9d0e3b9b6ea9",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:17:07.609Z",
+      "created_at": "2026-10-28T08:17:07.609Z"
+    },
+    {
+      "id": "6efec64e030c723645c7db268671d4d73896d6fea25dc56e1a3014334a09eeea",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:31:54.193Z",
+      "created_at": "2026-10-28T08:31:54.193Z"
+    },
+    {
+      "id": "e81b5ee2c8b135512e0c663951b73fe3dac48c0027a2d8030a18cbfa670804ef",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:34:36.861Z",
+      "created_at": "2026-10-28T08:34:36.861Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "02d21253-cbdf-4e03-9874-61cec5199946",
+      "user_id": "6c990d47-3759-44a5-8756-4bd31a07d904",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-27T13:17:08.467Z"
+    },
+    {
+      "id": "b3292668-fcc1-45c9-b22b-6aab22d3867d",
+      "user_id": "6c990d47-3759-44a5-8756-4bd31a07d904",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-27T13:17:08.491Z"
+    },
+    {
+      "id": "e6023320-2555-4104-a968-0168888bb14a",
+      "user_id": "6c990d47-3759-44a5-8756-4bd31a07d904",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: 78af9973-95f0-4095-9966-9704206ac4f2).",
+      "created_at": "2026-10-27T13:17:08.556Z"
+    },
+    {
+      "id": "2cfc3ba7-8229-4983-ba46-568d39df441d",
+      "user_id": "e7bba919-7c65-4a19-ba82-317aafafc490",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T07:48:08.436Z"
+    },
+    {
+      "id": "6d88c15e-85bb-410f-8796-edf0e633fb0f",
+      "user_id": "e7bba919-7c65-4a19-ba82-317aafafc490",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T07:48:08.452Z"
+    },
+    {
+      "id": "7bdf5896-344c-4085-827a-8aeb943acf24",
+      "user_id": "e7bba919-7c65-4a19-ba82-317aafafc490",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: 5ed55c20-6432-4495-8104-19955be15684).",
+      "created_at": "2026-10-28T07:48:08.492Z"
+    },
+    {
+      "id": "60bd9e19-f027-4fb0-b921-070a12ed8912",
+      "user_id": "8892a135-c029-4a6f-bdb9-cfdf7c34d4ff",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:14:03.702Z"
+    },
+    {
+      "id": "a6e12ec4-776b-4c8b-b645-41bbb3e7ce55",
+      "user_id": "8892a135-c029-4a6f-bdb9-cfdf7c34d4ff",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T08:14:03.714Z"
+    },
+    {
+      "id": "2ca5faf1-5afb-46b7-9965-d660f8445615",
+      "user_id": "8892a135-c029-4a6f-bdb9-cfdf7c34d4ff",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: c24f8bd4-f188-45c2-99cf-921b9930fe13).",
+      "created_at": "2026-10-28T08:14:03.748Z"
+    },
+    {
+      "id": "cc6439ae-9b92-4872-bd14-4373d028aef6",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:15:37.004Z"
+    },
+    {
+      "id": "90660f1a-5154-449b-a0e6-6e48bea332cd",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T08:15:37.014Z"
+    },
+    {
+      "id": "72e143ef-0c2c-4d70-b707-863dba185afe",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "event_type": "ACCOUNT_RECOVERED",
+      "ip_address": "127.0.0.1",
+      "details": "Récupération de compte réussie avec la clé d’urgence et réinitialisation du mot de passe maître.",
+      "created_at": "2026-10-28T08:15:37.676Z"
+    },
+    {
+      "id": "d5abd97f-9969-45c3-89f7-146540da7729",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:15:38.078Z"
+    },
+    {
+      "id": "1824ceb2-c679-45e6-99c5-b400c2dbffcd",
+      "user_id": "0151d42c-ee99-473e-93bf-da85566418da",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: e0f6cb07-fadf-4e2d-b71c-5e93b52ad3fd).",
+      "created_at": "2026-10-28T08:15:38.098Z"
+    },
+    {
+      "id": "c73b0bad-103e-42b6-8746-59cefbf4ae5b",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:17:06.592Z"
+    },
+    {
+      "id": "e612a730-0c2a-46e1-ac3d-266acfc6982a",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T08:17:06.607Z"
+    },
+    {
+      "id": "88b918e0-215c-490a-b1e5-08ccf2419c94",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "event_type": "ACCOUNT_RECOVERED",
+      "ip_address": "127.0.0.1",
+      "details": "Récupération de compte réussie avec la clé d’urgence et réinitialisation du mot de passe maître.",
+      "created_at": "2026-10-28T08:17:07.219Z"
+    },
+    {
+      "id": "8d0f677b-4950-42fd-bfd3-527a2bd72058",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:17:07.609Z"
+    },
+    {
+      "id": "35c1738d-3a4c-4ef4-8fe2-b35782d6fd30",
+      "user_id": "29e76809-1448-4f61-8235-94ad8877185c",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: c57a5a93-8e83-436f-b5e6-2e38e8bf5a38).",
+      "created_at": "2026-10-28T08:17:07.624Z"
+    },
+    {
+      "id": "be2e37a3-4848-46f9-9b4e-5b3ce572ba85",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:31:52.999Z"
+    },
+    {
+      "id": "f68620dd-cc26-46b8-a5c8-691ff37dd88b",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T08:31:53.011Z"
+    },
+    {
+      "id": "1df622c3-b82d-4547-8beb-1b15435f6ba0",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "event_type": "ACCOUNT_RECOVERED",
+      "ip_address": "127.0.0.1",
+      "details": "Récupération de compte réussie avec la clé d’urgence et réinitialisation du mot de passe maître.",
+      "created_at": "2026-10-28T08:31:53.703Z"
+    },
+    {
+      "id": "318ced27-20fe-4f3c-8100-1ccb1d2d81f1",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:31:54.193Z"
+    },
+    {
+      "id": "e9f2f07e-ad09-449e-a98e-21d505fa2ebf",
+      "user_id": "ee305448-9ef4-4268-ba0d-d58cc2b548f6",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: ff98de07-0df8-46f8-b7f9-747ae0a05e0a).",
+      "created_at": "2026-10-28T08:31:54.206Z"
+    },
+    {
+      "id": "f6bc6411-148a-4e52-9308-89d44f64e9e1",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:34:35.930Z"
+    },
+    {
+      "id": "14c4d0cd-32c9-4c8b-88bb-9485c6f9cf51",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "event_type": "VAULT_ITEM_CREATED",
+      "ip_address": "127.0.0.1",
+      "details": "Ajout d'une nouvelle entrée chiffrée dans la catégorie [banks].",
+      "created_at": "2026-10-28T08:34:35.941Z"
+    },
+    {
+      "id": "2e1f2632-62db-4821-a2b2-a04a3ca9f56a",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "event_type": "ACCOUNT_RECOVERED",
+      "ip_address": "127.0.0.1",
+      "details": "Récupération de compte réussie avec la clé d’urgence et réinitialisation du mot de passe maître.",
+      "created_at": "2026-10-28T08:34:36.553Z"
+    },
+    {
+      "id": "796f1e7a-3c9f-4f11-8bbe-66c5530a87ce",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:34:36.861Z"
+    },
+    {
+      "id": "143dc72b-de1a-4748-ad25-4149334fa574",
+      "user_id": "06f5ac3e-c3a3-4063-9f46-39b229c7d417",
+      "event_type": "VAULT_ITEM_DELETED",
+      "ip_address": "127.0.0.1",
+      "details": "Suppression d'un identifiant chiffré (ID: 36d1d8ab-1b06-49ad-92c9-8deb34179a81).",
+      "created_at": "2026-10-28T08:34:36.874Z"
+    }
+  ]
+}

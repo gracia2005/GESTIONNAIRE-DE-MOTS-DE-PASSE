@@ -1,0 +1,409 @@
+{
+  "users": [
+    {
+      "id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "email": "student_1793105161789@securevault.local",
+      "password_hash": "$2a$12$CXuxY2QQw81XZHEEZsKYHuSs0JDrpFzSM2EA/o1BE1RnMA46z0Ea6",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-27T12:46:02.542Z",
+      "updated_at": "2026-10-27T12:46:02.542Z"
+    },
+    {
+      "id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "email": "student_1793107026959@securevault.local",
+      "password_hash": "$2a$12$G.BtcDWAI8B/0CaCJuYdceRfzU8boTEOWfxz.bYDEQACytp9FINb.",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-27T13:17:07.827Z",
+      "updated_at": "2026-10-27T13:17:07.827Z"
+    },
+    {
+      "id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "email": "student_1793173687222@securevault.local",
+      "password_hash": "$2a$12$k1wYatrETz40uA0cQVinxuSfOk0Ue1o42jb5LVRRjtku3ZEnA4z12",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T07:48:08.001Z",
+      "updated_at": "2026-10-28T07:48:08.001Z"
+    },
+    {
+      "id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "email": "student_1793175242841@securevault.local",
+      "password_hash": "$2a$12$tVs.LbaKEoujBbX91a27w.C3InrPrmE6NIEPIDwt0QLZB.1nVrXVW",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:14:03.387Z",
+      "updated_at": "2026-10-28T08:14:03.387Z"
+    },
+    {
+      "id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "email": "student_1793175336207@securevault.local",
+      "password_hash": "$2a$12$FIPGaoNNd3Vu.iOW/l/MfeTSKCST0HwxJ8ht7L2jci8gcUzlA.ihW",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:15:36.737Z",
+      "updated_at": "2026-10-28T08:15:36.737Z"
+    },
+    {
+      "id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "email": "student_1793175425667@securevault.local",
+      "password_hash": "$2a$12$fJ0Tr21yx88eeEYeDy4mi.CgL5QjaGI3QysXcUf0k5SoNKQBEBV1G",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:17:06.267Z",
+      "updated_at": "2026-10-28T08:17:06.267Z"
+    },
+    {
+      "id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "email": "student_1793176312051@securevault.local",
+      "password_hash": "$2a$12$yzhv/hrQYBO5/v8EDo001e1cwY869nKCR7bYx5igzXT4MdXNj8c8u",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:31:52.636Z",
+      "updated_at": "2026-10-28T08:31:52.636Z"
+    },
+    {
+      "id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "email": "student_1793176475099@securevault.local",
+      "password_hash": "$2a$12$guYc5pTeHETpoh/WwlNEi.4QtE23H.JZdKw.mLTiGaSVMynTd11ni",
+      "auth_salt": "11223344556677889900aabbccddeeff",
+      "vault_salt": "ffeeddccbbaa00998877665544332211",
+      "recovery_encrypted_vault_key": "enc_recovery_blob_sample",
+      "recovery_key_iv": "iv_recovery_sample_12",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:34:35.591Z",
+      "updated_at": "2026-10-28T08:34:35.591Z"
+    }
+  ],
+  "vault_items": [],
+  "sessions": [
+    {
+      "id": "673764c02bdf3a8b61af91f0741e76c4b5c1b855337044ac3790064aa6c2d2bf",
+      "user_id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T12:46:02.545Z",
+      "created_at": "2026-10-27T12:46:02.542Z"
+    },
+    {
+      "id": "4b4ea403d03c72012c9a02a14d89b4f1cc1cdb31f844c51c6ddadadad8e62ac5",
+      "user_id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T12:46:04.389Z",
+      "created_at": "2026-10-27T12:46:04.389Z"
+    },
+    {
+      "id": "6c6b54f04aa9211e387f2f039992f3949dc4555ca0771398cea4f5d860cddcf9",
+      "user_id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T13:17:07.829Z",
+      "created_at": "2026-10-27T13:17:07.827Z"
+    },
+    {
+      "id": "93ebaf6dda84ed978ae7eae908daaf19befd22ce8db6f238c7a0daac33b4a69f",
+      "user_id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T13:17:09.499Z",
+      "created_at": "2026-10-27T13:17:09.499Z"
+    },
+    {
+      "id": "337640472e570dd75dcd4137e99395148e706474e8eb2cd5c2690a4f1c56bbb1",
+      "user_id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T07:48:08.002Z",
+      "created_at": "2026-10-28T07:48:08.001Z"
+    },
+    {
+      "id": "309d7ca3abb5125ed119a210d8f62c512e8048257a2e942d182dd0d5fead97c4",
+      "user_id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T07:48:09.331Z",
+      "created_at": "2026-10-28T07:48:09.331Z"
+    },
+    {
+      "id": "93b046a1d719e3301631abe6e277097d71497ba1f10c8c9f27cb1bc8d3cc143a",
+      "user_id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:14:03.388Z",
+      "created_at": "2026-10-28T08:14:03.387Z"
+    },
+    {
+      "id": "81192bafb477e5effbb31b6a44dd373ca247dcbee64cacd920652c9eff26820e",
+      "user_id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:14:04.179Z",
+      "created_at": "2026-10-28T08:14:04.179Z"
+    },
+    {
+      "id": "d01e0170bfc1bab67fa2dfc3aebf2dd5b03fc366c598a24f1c474476be74720a",
+      "user_id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:15:36.738Z",
+      "created_at": "2026-10-28T08:15:36.737Z"
+    },
+    {
+      "id": "3e32a7c2f77623d780168d2d61b5b038a9c93fd9c956cfedfca400fd6dc17eaa",
+      "user_id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:15:37.545Z",
+      "created_at": "2026-10-28T08:15:37.545Z"
+    },
+    {
+      "id": "90770d61477b292b727458ba28be5dc7749351e04d96a9e104cbcd5312177045",
+      "user_id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:17:06.267Z",
+      "created_at": "2026-10-28T08:17:06.267Z"
+    },
+    {
+      "id": "c62f13784ce0d1b61135bcfd564b16f22b37947670fe92a0bf98cab56be0a68b",
+      "user_id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:17:07.089Z",
+      "created_at": "2026-10-28T08:17:07.089Z"
+    },
+    {
+      "id": "bfa163cce1d92fa1c504b86c2aa7e0042875a93f2e9339755ad97d08b3f9c58b",
+      "user_id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:31:52.639Z",
+      "created_at": "2026-10-28T08:31:52.636Z"
+    },
+    {
+      "id": "4d4361a1d4302bff38640aa5740d53956bb074cfc00f4ec4f5180b9ff46f11a2",
+      "user_id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:31:53.506Z",
+      "created_at": "2026-10-28T08:31:53.506Z"
+    },
+    {
+      "id": "718bea92cbea9b6d2c20d64d17c156df9c16af88e172ec63926e2a992dc1fa13",
+      "user_id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:34:35.592Z",
+      "created_at": "2026-10-28T08:34:35.591Z"
+    },
+    {
+      "id": "ff753bfa184eabbe16d3a1cad639dd0d58b63d521ed6681c26d36b002a47b9fc",
+      "user_id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:34:36.427Z",
+      "created_at": "2026-10-28T08:34:36.427Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "5412b51b-cee4-413d-8a3a-1615e6b733c1",
+      "user_id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-27T12:46:02.542Z"
+    },
+    {
+      "id": "ced01f52-0b3d-4de3-ac93-5de3ac8e3772",
+      "user_id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-27T12:46:03.529Z"
+    },
+    {
+      "id": "3f05b927-a1a7-4b82-84b1-07a1cfa03fc6",
+      "user_id": "dc8526a4-e32a-4c4b-80c3-287508776e03",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-27T12:46:04.389Z"
+    },
+    {
+      "id": "fad63163-c8a4-4534-97e4-f779861f7084",
+      "user_id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-27T13:17:07.827Z"
+    },
+    {
+      "id": "7d4199d8-78c4-4fef-be08-a1f9052b1cac",
+      "user_id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-27T13:17:08.772Z"
+    },
+    {
+      "id": "14956eb2-0f3d-46af-88c4-22111a777e2f",
+      "user_id": "5a199977-224f-470a-8dc5-5986c5b785a6",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-27T13:17:09.499Z"
+    },
+    {
+      "id": "b175a7f2-1778-448f-ac66-1ac3da7af992",
+      "user_id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T07:48:08.001Z"
+    },
+    {
+      "id": "6bfc1cd6-2250-4d3e-ae55-7a03e40ef6e0",
+      "user_id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T07:48:08.654Z"
+    },
+    {
+      "id": "4508b9cb-c41a-4a45-80a7-156242f3143f",
+      "user_id": "80a8face-0567-44c1-a2bb-2cc393d4bfd4",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T07:48:09.331Z"
+    },
+    {
+      "id": "7d7b5c6c-ca15-457a-8f8f-c4509202bda0",
+      "user_id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:14:03.387Z"
+    },
+    {
+      "id": "556cd395-4b0b-45a4-b066-872f29f5a477",
+      "user_id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T08:14:03.824Z"
+    },
+    {
+      "id": "7453e8e1-c17c-4bb0-b3fd-55b8652ebf6c",
+      "user_id": "0ec9da63-4dfa-406c-a1ef-7d6e15b145b9",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:14:04.179Z"
+    },
+    {
+      "id": "17754e98-9714-428a-a49e-467859b70ca6",
+      "user_id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:15:36.737Z"
+    },
+    {
+      "id": "bd0e341d-640a-4c57-a999-97101e4a97a4",
+      "user_id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T08:15:37.169Z"
+    },
+    {
+      "id": "336f52a3-831d-47b3-8682-e69fe8e8bbbf",
+      "user_id": "3d26c984-385a-4b03-81b2-15547dece0a2",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:15:37.545Z"
+    },
+    {
+      "id": "aee085af-da35-466b-bca5-5efac8f23a66",
+      "user_id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:17:06.267Z"
+    },
+    {
+      "id": "633a1997-7f9c-44ba-bec8-de0778b40bc0",
+      "user_id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T08:17:06.742Z"
+    },
+    {
+      "id": "cbaddfe7-25d6-4eb4-bb36-737d0d4fab51",
+      "user_id": "039a4aa6-7fd2-4485-9096-abd1734d37f8",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:17:07.089Z"
+    },
+    {
+      "id": "7d730ab9-b08e-42b2-a046-8d61a77309d8",
+      "user_id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:31:52.636Z"
+    },
+    {
+      "id": "c1c2c314-ebfa-4963-9133-32a7864411c4",
+      "user_id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T08:31:53.108Z"
+    },
+    {
+      "id": "f153e3f7-8d0f-46d8-8894-64853793dfc0",
+      "user_id": "84461a3a-8d1f-4d0e-b390-9ec62fa69b86",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:31:53.506Z"
+    },
+    {
+      "id": "919eec25-e995-49e0-8e06-a1392fc72a92",
+      "user_id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:34:35.591Z"
+    },
+    {
+      "id": "11f61abe-b1c3-460b-b004-72c9408cae31",
+      "user_id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "event_type": "LOGIN_FAILURE",
+      "ip_address": "127.0.0.1",
+      "details": "Tentative de connexion échouée (mot de passe maître erroné).",
+      "created_at": "2026-10-28T08:34:36.081Z"
+    },
+    {
+      "id": "8adb25f4-e6b6-4470-bd9e-74074bc589bb",
+      "user_id": "91ce9887-31ee-45e2-af7b-877e9afae17e",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-28T08:34:36.427Z"
+    }
+  ]
+}

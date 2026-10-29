@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const userController_js_1 = require("../controllers/userController.js");
+const authMiddleware_js_1 = require("../middleware/authMiddleware.js");
+const router = (0, express_1.Router)();
+router.use(authMiddleware_js_1.requireAuth);
+router.post('/change-master-key', userController_js_1.changeMasterKey);
+router.put('/settings', userController_js_1.updateSettings);
+router.get('/sessions', userController_js_1.getActiveSessions);
+router.delete('/sessions/:id', userController_js_1.revokeSession);
+router.post('/sessions/revoke-others', userController_js_1.revokeOtherSessions);
+exports.default = router;

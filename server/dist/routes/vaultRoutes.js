@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const vaultController_js_1 = require("../controllers/vaultController.js");
+const authMiddleware_js_1 = require("../middleware/authMiddleware.js");
+const router = (0, express_1.Router)();
+router.use(authMiddleware_js_1.requireAuth);
+router.get('/', vaultController_js_1.getVaultItems);
+router.post('/', vaultController_js_1.createVaultItem);
+router.put('/:id', vaultController_js_1.updateVaultItem);
+router.delete('/:id', vaultController_js_1.deleteVaultItem);
+exports.default = router;

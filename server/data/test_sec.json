@@ -1,0 +1,209 @@
+{
+  "users": [
+    {
+      "id": "fbdc5d6c-cad4-433a-bf5f-49839f416009",
+      "email": "csrf_user_1793105161869@securevault.local",
+      "password_hash": "$2a$12$Tslzwty6r2.MQGD7UbdZTuc7NhaycfjUBH/UBG26rG1elzTIx5fIW",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-27T12:46:02.540Z",
+      "updated_at": "2026-10-27T12:46:02.540Z"
+    },
+    {
+      "id": "d6416fa2-446d-4a06-8da9-76eea07b5309",
+      "email": "csrf_user_1793107027033@securevault.local",
+      "password_hash": "$2a$12$IGlaJyjRbU.2VOBuuIZMj.C.TuPjC/AdrswxMSMTp2gMM9GmCepbC",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-27T13:17:07.756Z",
+      "updated_at": "2026-10-27T13:17:07.756Z"
+    },
+    {
+      "id": "88fee391-af37-4c69-893e-8b1c10837d26",
+      "email": "csrf_user_1793173687321@securevault.local",
+      "password_hash": "$2a$12$J7sed2avjV9SNLKAl2wAb.QpR2.JL22nTPBDBI8HpV2tdhoFcJ23K",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T07:48:08.009Z",
+      "updated_at": "2026-10-28T07:48:08.009Z"
+    },
+    {
+      "id": "399d5221-819d-4e54-878d-68648d7a92e7",
+      "email": "csrf_user_1793175242905@securevault.local",
+      "password_hash": "$2a$12$FczkH3R/6t7s8Yn.V41KjeydCw/N6zgEos3/32kgXWTrB.zTubKvC",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:14:03.393Z",
+      "updated_at": "2026-10-28T08:14:03.393Z"
+    },
+    {
+      "id": "17806eff-635f-41a0-a91d-040318e966bd",
+      "email": "csrf_user_1793175336290@securevault.local",
+      "password_hash": "$2a$12$yUGbx6rbqb2tzz8UJmQ95.aNA4roVQhL0i27V9db1jM12mjntV.Fa",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:15:36.726Z",
+      "updated_at": "2026-10-28T08:15:36.726Z"
+    },
+    {
+      "id": "d1c715b9-f546-4ec2-a073-dde08b2d4043",
+      "email": "csrf_user_1793175425734@securevault.local",
+      "password_hash": "$2a$12$A9woea0RWAoqCmDn5ekUCulT0Z7MPlYwkEl3SKamPqIKqJrQxokfO",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:17:06.233Z",
+      "updated_at": "2026-10-28T08:17:06.233Z"
+    },
+    {
+      "id": "9416fe66-c9b7-4772-b696-96e94acdbe3f",
+      "email": "csrf_user_1793176312112@securevault.local",
+      "password_hash": "$2a$12$USRIznE7rtOTZg7CQr706.uD/qadfhpRRc7STGZ7H.giKvNFNOz2G",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:31:52.651Z",
+      "updated_at": "2026-10-28T08:31:52.651Z"
+    },
+    {
+      "id": "6115393a-04cf-42b3-bebc-65cf25121baf",
+      "email": "csrf_user_1793176475155@securevault.local",
+      "password_hash": "$2a$12$CKmlxdN6K8QxrfcbNfGODOxFvS2RCKYoRH94dPn.h1zWy67Fr1vAK",
+      "auth_salt": "salt123456789012",
+      "vault_salt": "salt123456789012",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-28T08:34:35.612Z",
+      "updated_at": "2026-10-28T08:34:35.612Z"
+    }
+  ],
+  "vault_items": [],
+  "sessions": [
+    {
+      "id": "755a439c57def33d8773b2f2e990000f9eacd26e555d6e1572032f1d881f4616",
+      "user_id": "fbdc5d6c-cad4-433a-bf5f-49839f416009",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T12:46:02.543Z",
+      "created_at": "2026-10-27T12:46:02.540Z"
+    },
+    {
+      "id": "b444945b44a16cb57d256c89e0343ee374d1f1ee4fb44a871edc1d3041d5c3eb",
+      "user_id": "d6416fa2-446d-4a06-8da9-76eea07b5309",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-03T13:17:07.758Z",
+      "created_at": "2026-10-27T13:17:07.756Z"
+    },
+    {
+      "id": "807ba99abc370ddaad51ffe117e51a0a12069fa55bae87e49a82fa8b71aa2494",
+      "user_id": "88fee391-af37-4c69-893e-8b1c10837d26",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T07:48:08.010Z",
+      "created_at": "2026-10-28T07:48:08.009Z"
+    },
+    {
+      "id": "1ef4dcd5948764b0934396353da7ba6d499047ca8fcf7bb4ca1e389d6466d974",
+      "user_id": "399d5221-819d-4e54-878d-68648d7a92e7",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:14:03.394Z",
+      "created_at": "2026-10-28T08:14:03.393Z"
+    },
+    {
+      "id": "c9a2e322205fbd05573a0a9adcb8240476c12a55786df303c0ec65c6abe274b5",
+      "user_id": "17806eff-635f-41a0-a91d-040318e966bd",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:15:36.727Z",
+      "created_at": "2026-10-28T08:15:36.726Z"
+    },
+    {
+      "id": "033caaaa8fb7ea96b5365af01333ca1ca5087974e115f3e112598b10a181aec0",
+      "user_id": "d1c715b9-f546-4ec2-a073-dde08b2d4043",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:17:06.234Z",
+      "created_at": "2026-10-28T08:17:06.233Z"
+    },
+    {
+      "id": "4b69ead9cc393846118e2043bf6c47c922798894b7acc30d58de41921e3e7863",
+      "user_id": "9416fe66-c9b7-4772-b696-96e94acdbe3f",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:31:52.652Z",
+      "created_at": "2026-10-28T08:31:52.651Z"
+    },
+    {
+      "id": "cd8693abdcbc20401ab467b5d4d5774c816df630dc83e5aa406544cdfa6ed42d",
+      "user_id": "6115393a-04cf-42b3-bebc-65cf25121baf",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-04T08:34:35.613Z",
+      "created_at": "2026-10-28T08:34:35.612Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "32e80ebe-fad2-4fb7-be99-ca86b4156137",
+      "user_id": "fbdc5d6c-cad4-433a-bf5f-49839f416009",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-27T12:46:02.540Z"
+    },
+    {
+      "id": "f4d1ac5e-242b-4b1e-ba6b-08e0eeaa5799",
+      "user_id": "d6416fa2-446d-4a06-8da9-76eea07b5309",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-27T13:17:07.756Z"
+    },
+    {
+      "id": "843360f7-dd3c-46b0-898c-68318cdb0f5a",
+      "user_id": "88fee391-af37-4c69-893e-8b1c10837d26",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T07:48:08.009Z"
+    },
+    {
+      "id": "b7a71109-2bbe-4908-ac6c-e4273ef5b220",
+      "user_id": "399d5221-819d-4e54-878d-68648d7a92e7",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:14:03.393Z"
+    },
+    {
+      "id": "ad2e7583-59d5-4143-b17b-45aa54ec2ec6",
+      "user_id": "17806eff-635f-41a0-a91d-040318e966bd",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:15:36.726Z"
+    },
+    {
+      "id": "9a45309f-2c7f-4e61-88dd-34aed3bd538d",
+      "user_id": "d1c715b9-f546-4ec2-a073-dde08b2d4043",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:17:06.233Z"
+    },
+    {
+      "id": "bbfcbcfa-262a-43e4-9208-e717f63c30e8",
+      "user_id": "9416fe66-c9b7-4772-b696-96e94acdbe3f",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:31:52.651Z"
+    },
+    {
+      "id": "e8eafa6e-a13b-43d6-9da9-fd3ff7be153e",
+      "user_id": "6115393a-04cf-42b3-bebc-65cf25121baf",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-28T08:34:35.612Z"
+    }
+  ]
+}

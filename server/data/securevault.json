@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "902b4296-16bd-4408-a15c-2d2752ec3936",
+      "email": "kirstyy.kittyxo@gmail.com",
+      "password_hash": "$2a$12$9b0wSzKGhlOexsR9vD5RneygeFzsonNu2I.do4G.M60kxO9VLJ8aG",
+      "auth_salt": "b3e4c3906f8e1b5c064fb28598afb7c3",
+      "vault_salt": "c13b672022d1fc4f9b85b13f7c4a64f1",
+      "recovery_encrypted_vault_key": "/amUq8B0Cy/D02tPml6yYnzkjAovEONoKUwe8wfDNRj5JxL8Pk7THZx6T0lFi34w",
+      "recovery_key_iv": "PJOKAnY/aZOci+KU",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-10-29T07:46:27.763Z",
+      "updated_at": "2026-10-29T07:46:27.763Z"
+    }
+  ],
+  "vault_items": [],
+  "sessions": [
+    {
+      "id": "0bf4e5ba284274d3d740471438338efd7a9a94c6248be52b1a956c002870a801",
+      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "ip_address": "::1",
+      "expires_at": "2026-11-05T07:46:27.764Z",
+      "created_at": "2026-10-29T07:46:27.763Z"
+    },
+    {
+      "id": "a900403d1bf6a12bc6cac31da732e8461cbe4f43f8538bc425d4be4e27645cd8",
+      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "ip_address": "::1",
+      "expires_at": "2026-11-05T07:46:44.357Z",
+      "created_at": "2026-10-29T07:46:44.357Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "f90b7c6e-f7de-48b7-bca3-92397406089c",
+      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "::1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-10-29T07:46:27.763Z"
+    },
+    {
+      "id": "f89bf6ca-af10-46b6-bd1f-6edefa047c22",
+      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "::1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-10-29T07:46:44.357Z"
+    }
+  ]
+}
