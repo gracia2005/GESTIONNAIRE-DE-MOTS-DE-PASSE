@@ -2,6 +2,7 @@
   "name": "securevault",
   "version": "1.0.0",
   "description": "SecureVault - Zero-Knowledge Password Manager (Cybersecurity Project)",
+  "main": "electron/main.js",
   "private": true,
   "scripts": {
     "dev:server": "cd server && npm run dev",
@@ -12,7 +13,113 @@
     "build": "npm run build:server && npm run build:client",
     "test:server": "cd server && npm test",
     "test:client": "cd client && npm test",
-    "test": "npm run test:server && npm run test:client"
+    "test": "npm run test:server && npm run test:client",
+    "desktop:start": "npm run build && electron .",
+    "dist": "npm run build && electron-builder --publish never",
+    "dist:win": "npm run build && electron-builder --win --publish never",
+    "dist:mac": "npm run build && electron-builder --mac --publish never",
+    "dist:linux": "npm run build && electron-builder --linux --publish never"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.securevault.app",
+    "productName": "SecureVault",
+    "copyright": "Copyright © 2026 SecureVault Team",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "server/dist/**/*",
+      "client/dist/**/*",
+      "build/icon.*",
+      "package.json",
+      "!server/data/**/*"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "SecureVault-${version}-win-${arch}-setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "SecureVault-${version}-win-${arch}-portable.${ext}"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "build/icon.png",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "artifactName": "SecureVault-${version}-mac-${arch}.${ext}"
+    },
+    "linux": {
+      "category": "Utility",
+      "icon": "build/icon.png",
+      "maintainer": "SecureVault Team <security@securevault.local>",
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "SecureVault-${version}-linux-${arch}.${ext}"
+    }
   },
   "keywords": [
     "password-manager",
@@ -20,7 +127,9 @@
     "zero-knowledge",
     "aes-gcm",
     "pbkdf2",
-    "argon2"
+    "argon2",
+    "electron",
+    "desktop"
   ],
   "author": "SecureVault Team",
   "license": "MIT"

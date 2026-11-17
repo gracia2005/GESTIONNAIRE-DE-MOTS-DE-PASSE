@@ -20,13 +20,16 @@ import {
   Laptop,
   LogOut,
   RefreshCw,
+  FolderOpen,
+  ExternalLink,
+  HardDrive,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.js';
 import { useVault } from '../context/VaultContext.js';
 import { useToast } from '../components/Toast.js';
 import { CryptoEngine } from '../crypto/cryptoEngine.js';
 import { apiRequest } from '../api/client.js';
-import { AuditLogItem, VaultCategory, ActiveSession } from '../types/index.js';
+import { AuditLogItem, VaultCategory, ActiveSession, DesktopRuntimeInfo } from '../types/index.js';
 
 export const SettingsPage: React.FC = () => {
   const { user, updateAutoLockMinutes, vaultKey, setVaultKeyDirectly, refreshUser, logout } = useAuth();
@@ -61,12 +64,18 @@ export const SettingsPage: React.FC = () => {
   const [isRevokingOther, setIsRevokingOther] = useState(false);
   const [revokingSessionId, setRevokingSessionId] = useState<string | null>(null);
 
+  // Desktop App Info
+  const [desktopInfo, setDesktopInfo] = useState<DesktopRuntimeInfo | null>(null);
+
   useEffect(() => {
     if (user) {
       setAutoLockMinutes(user.auto_lock_minutes);
     }
     loadAuditLogs();
     loadSessions();
+    if (window.secureVaultDesktop?.isDesktop) {
+      window.secureVaultDesktop.getInfo().then(setDesktopInfo).catch(() => {});
+    }
   }, [user]);
 
   const loadSessions = async () => {
@@ -153,7 +162,9 @@ export const SettingsPage: React.FC = () => {
       os = 'Linux';
     }
 
-    if (/Edg\//i.test(ua)) {
+    if (/Electron\//i.test(ua)) {
+      browser = 'Application Desktop SecureVault';
+    } else if (/Edg\//i.test(ua)) {
       browser = 'Microsoft Edge';
     } else if (/Chrome\//i.test(ua) && !/Edg\//i.test(ua)) {
       browser = 'Google Chrome';
@@ -927,6 +938,95 @@ IMPORTANT :
             </div>
           </button>
         </div>
+      </div>
+
+      {/* Multi-Platform Desktop Application Section */}
+      <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center">
+            <HardDrive className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="font-bold text-sm text-slate-800 dark:text-slate-100">
+              Application Desktop Multi-Plateforme (Windows, macOS, Linux)
+            </h3>
+            <p className="text-xs text-slate-400">
+              {window.secureVaultDesktop?.isDesktop
+                ? 'Vous utilisez le logiciel natif autonome avec stockage chiffré local.'
+                : 'Téléchargez la version installable autonome de SecureVault pour votre système d’exploitation.'}
+            </p>
+          </div>
+        </div>
+
+        {window.secureVaultDesktop?.isDesktop ? (
+          <div className="space-y-3 pt-1">
+            <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 space-y-1.5">
+              <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                <span>Emplacement local du coffre chiffré</span>
+                {desktopInfo && (
+                  <span className="font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                    v{desktopInfo.version} · {desktopInfo.platform} ({desktopInfo.arch})
+                  </span>
+                )}
+              </div>
+              <p className="font-mono text-xs text-slate-800 dark:text-slate-200 break-all">
+                {desktopInfo?.vaultPath || 'Chargement du chemin local...'}
+              </p>
+            </div>
+
+            <div className="flex justify-end">
+              <button
+                type="button"
+                onClick={() => window.secureVaultDesktop?.openDataFolder()}
+                className="px-4 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-md transition-all flex items-center gap-1.5"
+              >
+                <FolderOpen className="w-3.5 h-3.5" />
+                <span>Ouvrir le dossier de données local</span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <a
+              href="https://github.com/gracia2005/GESTIONNAIRE-DE-MOTS-DE-PASSE/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-850 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all flex items-center justify-between gap-2"
+            >
+              <div>
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200 block">Windows</span>
+                <span className="text-[10px] text-slate-400">Installateur & Portable (.exe)</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-emerald-500 shrink-0" />
+            </a>
+
+            <a
+              href="https://github.com/gracia2005/GESTIONNAIRE-DE-MOTS-DE-PASSE/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-850 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all flex items-center justify-between gap-2"
+            >
+              <div>
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200 block">macOS</span>
+                <span className="text-[10px] text-slate-400">Intel & Apple Silicon (.dmg)</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-emerald-500 shrink-0" />
+            </a>
+
+            <a
+              href="https://github.com/gracia2005/GESTIONNAIRE-DE-MOTS-DE-PASSE/releases/latest"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-850 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all flex items-center justify-between gap-2"
+            >
+              <div>
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200 block">Linux</span>
+                <span className="text-[10px] text-slate-400">Paquet universel (.AppImage / .deb)</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-emerald-500 shrink-0" />
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Account Recovery Notice */}

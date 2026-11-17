@@ -8,7 +8,7 @@ const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
 // Strict limiter for authentication attempts (Brute Force Protection)
 exports.authLimiter = (0, express_rate_limit_1.default)({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 15, // Max 15 attempts per IP per 15 minutes
+    max: () => (process.env.ELECTRON_APP === 'true' ? 100 : 15), // Higher local threshold in standalone desktop mode
     standardHeaders: true,
     legacyHeaders: false,
     message: {
@@ -19,7 +19,7 @@ exports.authLimiter = (0, express_rate_limit_1.default)({
 // General API limiter to prevent denial of service (DoS)
 exports.generalLimiter = (0, express_rate_limit_1.default)({
     windowMs: 15 * 60 * 1000,
-    max: 300,
+    max: () => (process.env.ELECTRON_APP === 'true' ? 5000 : 300),
     standardHeaders: true,
     legacyHeaders: false,
     message: {

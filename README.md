@@ -94,14 +94,23 @@ GESTIONNAIRE DE MOTS DE PASSE/
 │   ├── package.json
 │   └── vite.config.ts
 │
+├── electron/                   # Enveloppe Desktop native Electron (Windows, macOS, Linux)
+│   ├── main.js                 # Processus principal, serveur local embarqué & verrouillage OS
+│   └── preload.js              # Pont IPC sécurisé (contextIsolation)
+│
+├── build/                      # Ressources de packaging multi-OS (icônes SVG, PNG, ICO)
+│
+├── .github/workflows/          # Pipeline CI/CD GitHub Actions
+│   └── release.yml             # Compilation & publication automatique des installateurs
+│
 ├── server/                     # API Backend Express + TypeScript
 │   ├── src/
 │   │   ├── controllers/        # Contrôleurs métier (authController, vaultController, userController, auditController)
 │   │   ├── db/                 # Couche base de données (JSON embarqué ou PostgreSQL)
 │   │   ├── middleware/         # Middlewares sécurité (authentification, rate-limit, helmet, erreurs)
 │   │   ├── routes/             # Définition des routes Express
-│   │   ├── app.ts              # Configuration de l'application Express
-│   │   └── index.ts            # Point d'entrée du serveur
+│   │   ├── app.ts              # Configuration de l'application Express + service statique client
+│   │   └── index.ts            # Point d'entrée exportant startServer()
 │   ├── tests/                  # Suite de tests automatisés Vitest & Supertest
 │   │   ├── auth.test.ts        # Tests d'authentification et Zero-Knowledge
 │   │   ├── vault.test.ts       # Tests d'isolation et gestion du coffre
@@ -110,28 +119,48 @@ GESTIONNAIRE DE MOTS DE PASSE/
 │   │   └── e2e_vault_lifecycle.test.ts # Cycle de vie complet E2E (Chiffrement, Altération, Récupération)
 │   └── package.json
 │
-├── package.json                # Scripts racine (dev, build, test)
+├── package.json                # Scripts racine, dépendances et configuration electron-builder
 └── README.md                   # Documentation technique du projet
 ```
+
+---
+
+## 💻 Téléchargement du Logiciel Multi-Plateforme (Desktop Autonome)
+
+SecureVault est disponible en **application Desktop native autonome** (basée sur Electron) fonctionnant **100% hors-ligne** sans serveur externe ni base de données à installer :
+
+| Système d'exploitation | Formats disponibles | Architecture |
+| :--- | :--- | :--- |
+| **Windows** | Installateur (`setup.exe`) & Exécutable autonome (`portable.exe`) | `x64` |
+| **macOS** | Image disque (`.dmg`) & Archive (`.zip`) | `x64` (Intel) & `arm64` (Apple Silicon) |
+| **Linux** | Paquet universel (`.AppImage`) & Paquet Debian/Ubuntu (`.deb`) | `x64` |
+
+👉 **[Télécharger la dernière version sur GitHub Releases](https://github.com/gracia2005/GESTIONNAIRE-DE-MOTS-DE-PASSE/releases/latest)**
+
+### Architecture Desktop Autonome
+- **Serveur embarqué sur boucle locale** : Au lancement, Electron démarre le moteur Express strictement sur `127.0.0.1` (port `51730` ou port dynamique de repli) et sert l'interface compilée localement.
+- **Stockage chiffré dans le profil système** : Le fichier `securevault.json` (et le secret de session `.session_secret`) est stocké dans le répertoire système `userData` de l'utilisateur (`%APPDATA%\securevault\data` sur Windows, `~/Library/Application Support/securevault/data` sur macOS, `~/.config/securevault/data` sur Linux) avec permissions restreintes (`0700`/`0600`).
+- **Verrouillage système automatique** : Mise en veille, verrouillage de l'écran OS ou raccourci `Ctrl+L` / `Cmd+L` purgent immédiatement la clé maîtresse de la mémoire RAM.
 
 ---
 
 ## 🛠️ Installation et Démarrage
 
 ### Prérequis
-- **Node.js** (v18 ou supérieur recommandé)
+- **Node.js** (v18 ou supérieur recommandé, v22 LTS pour le packaging Desktop)
 - **npm** (v9 ou supérieur)
 
 ### 1. Installation des dépendances
-À la racine du projet, installez les dépendances du serveur et du client :
+À la racine du projet, installez les dépendances globales (Electron / `electron-builder`), du serveur et du client :
 ```bash
-# Installation des dépendances du serveur
-cd server
+# Installation des dépendances racine (Electron + dépendances backend embarquées)
 npm install
 
+# Installation des dépendances du serveur
+cd server && npm install
+
 # Installation des dépendances du client
-cd ../client
-npm install
+cd ../client && npm install
 ```
 
 ### 2. Configuration des variables d'environnement
@@ -210,9 +239,9 @@ npm test
 
 ---
 
-## 🏗️ Compilation pour la Production
+## 🏗️ Compilation et Packaging Multi-OS
 
-Pour générer les fichiers compilés optimisés :
+Pour générer les fichiers compilés optimisés (client + serveur) :
 ```bash
 # Compiler le serveur et le client
 npm run build
@@ -221,6 +250,28 @@ npm run build
 Les bundles de production sont générés dans :
 - `client/dist/` (fichiers statiques HTML, CSS, JS optimisés)
 - `server/dist/` (JavaScript Node.js compilé)
+
+### Lancer l'application Desktop en local
+```bash
+npm run desktop:start
+```
+
+### Générer les installateurs par système d'exploitation (dans `release/`)
+```bash
+# Générer les paquets pour le système courant
+npm run dist
+
+# Générer pour Windows (.exe NSIS + Portable)
+npm run dist:win
+
+# Générer pour macOS (.dmg + .zip Intel/Apple Silicon, exécuté sur macOS)
+npm run dist:mac
+
+# Générer pour Linux (.AppImage + .deb)
+npm run dist:linux
+```
+
+> Les releases officielles multi-OS sont également compilées et publiées automatiquement via GitHub Actions (`.github/workflows/release.yml`) sur `ubuntu-latest`, `windows-latest` et `macos-latest`.
 
 ---
 

@@ -68,6 +68,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
   }, [resetInactivityTimer]);
 
+  // Listen to OS suspend / screen lock / menu shortcut events from Electron Desktop wrapper
+  useEffect(() => {
+    const handleSystemLock = () => {
+      if (user && !isLocked) {
+        lock();
+      }
+    };
+
+    window.addEventListener('securevault:lock', handleSystemLock);
+    return () => {
+      window.removeEventListener('securevault:lock', handleSystemLock);
+    };
+  }, [user, isLocked, lock]);
+
   // Initial session restoration
   const refreshUser = useCallback(async () => {
     try {

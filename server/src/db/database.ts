@@ -98,7 +98,7 @@ export class DatabaseService {
     this.filePath = path.resolve(process.cwd(), rawPath);
     const dir = path.dirname(this.filePath);
     if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+      fs.mkdirSync(dir, { recursive: true, mode: 0o700 });
     }
 
     if (fs.existsSync(this.filePath)) {
@@ -116,7 +116,10 @@ export class DatabaseService {
 
   private saveState(): void {
     if (this.driver === 'sqlite') {
-      fs.writeFileSync(this.filePath, JSON.stringify(this.memoryState, null, 2), 'utf8');
+      fs.writeFileSync(this.filePath, JSON.stringify(this.memoryState, null, 2), {
+        encoding: 'utf8',
+        mode: 0o600,
+      });
     }
   }
 

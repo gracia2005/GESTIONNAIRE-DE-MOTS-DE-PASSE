@@ -1,3 +1,5 @@
 node_modules
 .env
 .env.exemple
+release/
+server/data/test_*.json

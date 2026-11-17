@@ -51,7 +51,7 @@ class DatabaseService {
         this.filePath = path_1.default.resolve(process.cwd(), rawPath);
         const dir = path_1.default.dirname(this.filePath);
         if (!fs_1.default.existsSync(dir)) {
-            fs_1.default.mkdirSync(dir, { recursive: true });
+            fs_1.default.mkdirSync(dir, { recursive: true, mode: 0o700 });
         }
         if (fs_1.default.existsSync(this.filePath)) {
             try {
@@ -69,7 +69,10 @@ class DatabaseService {
     }
     saveState() {
         if (this.driver === 'sqlite') {
-            fs_1.default.writeFileSync(this.filePath, JSON.stringify(this.memoryState, null, 2), 'utf8');
+            fs_1.default.writeFileSync(this.filePath, JSON.stringify(this.memoryState, null, 2), {
+                encoding: 'utf8',
+                mode: 0o600,
+            });
         }
     }
     // --- Users ---

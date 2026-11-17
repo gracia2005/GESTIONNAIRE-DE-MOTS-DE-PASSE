@@ -11,25 +11,45 @@
       "auto_lock_minutes": 15,
       "created_at": "2026-10-29T07:46:27.763Z",
       "updated_at": "2026-10-29T07:46:27.763Z"
+    },
+    {
+      "id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "email": "xavierlebulbe@gmail.com",
+      "password_hash": "$2a$12$QGVxYhrt0PJq.eD4LBnb0.KgCCpcCyhMw8x4WX6yK0UkV/9ROiq/O",
+      "auth_salt": "5388dc966ccae215231d7229b4b077bb",
+      "vault_salt": "789357c8aa1bea2754bf0d95129a557c",
+      "recovery_encrypted_vault_key": "vUpqOYNE7g+WZQwXvdJCBK3QxOP/RqZIWkTzeYp2aP5/IKQP0nl/QIQ0L6tCAqoX",
+      "recovery_key_iv": "3DPfXDuuHLsTvQLc",
+      "auto_lock_minutes": 15,
+      "created_at": "2026-11-17T22:35:05.282Z",
+      "updated_at": "2026-11-17T22:35:05.282Z"
     }
   ],
   "vault_items": [],
   "sessions": [
     {
-      "id": "0bf4e5ba284274d3d740471438338efd7a9a94c6248be52b1a956c002870a801",
-      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-      "ip_address": "::1",
-      "expires_at": "2026-11-05T07:46:27.764Z",
-      "created_at": "2026-10-29T07:46:27.763Z"
+      "id": "5b28a66a33ad158327e7c3b5b3e7629087a89a24588518b59b3bd977550d1bce",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.146.0 Chrome/150.0.7871.250 Electron/43.8.6 Safari/537.36",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-24T22:35:05.282Z",
+      "created_at": "2026-11-17T22:35:05.282Z"
     },
     {
-      "id": "a900403d1bf6a12bc6cac31da732e8461cbe4f43f8538bc425d4be4e27645cd8",
-      "user_id": "902b4296-16bd-4408-a15c-2d2752ec3936",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
-      "ip_address": "::1",
-      "expires_at": "2026-11-05T07:46:44.357Z",
-      "created_at": "2026-10-29T07:46:44.357Z"
+      "id": "1f9fe16979e69114aeb7e2ed845daaef7f8c55fb11d746c4a7aa7f7b8a812e24",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.146.0 Chrome/150.0.7871.250 Electron/43.8.6 Safari/537.36",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-24T22:35:39.114Z",
+      "created_at": "2026-11-17T22:35:39.113Z"
+    },
+    {
+      "id": "3b3626983ef7276812f65ca950501d09c22a7b0e3bed0674e9448f0528a2613c",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.146.0 Chrome/150.0.7871.250 Electron/43.8.6 Safari/537.36",
+      "ip_address": "127.0.0.1",
+      "expires_at": "2026-11-24T22:36:57.641Z",
+      "created_at": "2026-11-17T22:36:57.641Z"
     }
   ],
   "audit_logs": [
@@ -48,6 +68,30 @@
       "ip_address": "::1",
       "details": "Connexion réussie au coffre-fort.",
       "created_at": "2026-10-29T07:46:44.357Z"
+    },
+    {
+      "id": "662caa07-fe87-4c0e-873f-a796a5a815ec",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "event_type": "USER_REGISTERED",
+      "ip_address": "127.0.0.1",
+      "details": "Création initiale du compte SecureVault et configuration de la clé de secours.",
+      "created_at": "2026-11-17T22:35:05.282Z"
+    },
+    {
+      "id": "87705ac4-eaa7-4bca-bd8a-358e4fb7f38b",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-11-17T22:35:39.113Z"
+    },
+    {
+      "id": "755b8985-ad91-4a53-958e-005096e2a305",
+      "user_id": "4cefe109-7445-407d-8c85-cc2a82714be5",
+      "event_type": "LOGIN_SUCCESS",
+      "ip_address": "127.0.0.1",
+      "details": "Connexion réussie au coffre-fort.",
+      "created_at": "2026-11-17T22:36:57.641Z"
     }
   ]
 }

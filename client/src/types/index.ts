@@ -63,3 +63,25 @@ export interface ActiveSession {
   expires_at: string;
   is_current: boolean;
 }
+
+export interface DesktopRuntimeInfo {
+  isDesktop: boolean;
+  platform: string;
+  arch: string;
+  version: string;
+  vaultPath: string;
+  dataDir: string;
+}
+
+export interface SecureVaultDesktopAPI {
+  isDesktop: boolean;
+  platform: string;
+  getInfo: () => Promise<DesktopRuntimeInfo>;
+  openDataFolder: () => Promise<{ success: boolean }>;
+}
+
+declare global {
+  interface Window {
+    secureVaultDesktop?: SecureVaultDesktopAPI;
+  }
+}
